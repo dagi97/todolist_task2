@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    height: 100vh;
+    background:linear-gradient(
+        180deg,
+       rgb(239, 237, 237) 0%,
+       rgb(242, 146, 146) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/* todo container*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(246, 239, 239);
+    padding: 3rem;
+    border-radius: 2rem;
+    width:60%;
+    height:60%;
+    max-width: 40rem;
+    box-shadow: 0rem 1rem 3rem 1rem rgba(0, 0, 0, 0.17);
+
+/* button and input field*/
+}
+.todo{
+    position: relative;
+    display: flex;
+}
+/* add button*/
+.btn{
+    color:whitesmoke;
+    background-color: palevioletred;
+    border: none;
+    padding: 0.7rem;
+    position:absolute;
+    right:0.5rem;
+    bottom: 0.5rem;
+
+}
+.btn:hover{
+    background-color: pink;
+}
+/*input field*/
+ 
+.inputField{
+    padding: 1.00rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 0.02rem rgb(155, 149, 149) solid;
+    font-size: 1.1rem;
+
+}
+
+/*text*/
+.container h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.todo_ {
+  padding: 0.3rem 1rem;       
+  border-bottom: 0.1rem rgba(139, 136, 136, 0.2) solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo_:hover {
+  background-color: #f8c8c8;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.todoList {
+  max-height: 700px;  
+  overflow-y: auto;  
+  padding-left: 0;  
+  margin: 1rem 0;   
+  border: 1px solid #ccc;  
+  border-radius: 0.5rem;  
+  background-color: white;  
+}
+.todo_:active{
+    background-color: red;
+}
+.edit-btn, .delete-btn{
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: palevioletred;
+  border: 0.01rem solid gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover , .delete-btn:hover {
+  background-color: pink;
+  transform: scale(1.05);  
+}
+.inputt{
+  padding: 1rem;
+  width: 65%;;
+}
+
+ 
